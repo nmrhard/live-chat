@@ -3,7 +3,7 @@ import { projectAuth } from '../firebase/config.js';
 
 const error = ref(null);
 
-const login = async function() {
+const login = async function(email, password) {
   error.value = null;
 
   try {
@@ -17,7 +17,7 @@ const login = async function() {
 }
 
 const useLogin = function() {
-  return { error, login}
+  return { error, login }
 }
 
 export default useLogin;
