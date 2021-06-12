@@ -3,7 +3,7 @@ import { projectAuth } from '../firebase/config.js';
 
 const error = ref(null);
 
-const signup = async function(email, password, displaName) {
+const signup = async function(email, password, displayName) {
   error.value = null;
 
   try {
